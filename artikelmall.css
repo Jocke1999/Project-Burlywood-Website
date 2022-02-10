@@ -1,0 +1,226 @@
+body {
+  margin: 0;
+  font-family: "Jost", sans-serif;
+  background-color: rgb(150, 180, 166);
+  color: white;
+}
+
+#background-image {
+  background-image: url(./Bilder/campus-stor.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 80vh;
+  position: relative;
+}
+
+/* Header och navigation */
+
+#logo {
+  height: 100px;
+  position: absolute;
+  padding: 20px;
+}
+
+.main-menu {
+  display: flex;
+  position: relative;
+  justify-content: end;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  width: 600px;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+.nav-item {
+  flex-grow: 1;
+  position: relative;
+  padding-top: 10px;
+  font-weight: bold;
+  color: white;
+}
+
+.nav-item > a {
+  display: block;
+  padding: 20px;
+  text-decoration: none;
+  text-align: center;
+  transition: background-color 0.5s;
+  color: white;
+  font-size: 20px;
+  border-radius: 20px;
+}
+
+.nav-item:hover > a {
+  background-color: rgba(255, 255, 255, 0.466);
+  border-radius: 20px 20px 0px 0px;
+}
+
+#special:hover > a {
+  border-radius: 20px;
+}
+
+.sub-menu {
+  display: none;
+  position: absolute;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  left: 0;
+  transition: background-color 0.5s;
+}
+
+.sub-menu > a {
+  text-decoration: none;
+  text-align: center;
+  padding: 20px;
+  transition: background-color 0.5s;
+  border-radius: 20px;
+}
+
+.sub-menu > a:hover {
+  background-color: rgba(255, 255, 255, 0.466);
+}
+
+.nav-item:hover .sub-menu {
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.466);
+  border-radius: 0px 0px 20px 20px;
+  transition: background-color 0.5s;
+}
+
+/* Titel */
+
+.banner {
+  position: absolute;
+  top: 175px;
+}
+
+h1 {
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  font-size: 5vh;
+  height: 10vh;
+}
+
+h1 ~ p {
+  text-align: center;
+  font-size: 25px;
+  padding-left: 25vw;
+  padding-right: 25vw;
+  line-height: 45px;
+}
+
+/* Content */
+
+.content {
+  display: flex;
+  justify-content: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  width: 70vw;
+  gap: 10px;
+  padding-top: 40px;
+}
+
+.grid-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 30px;
+}
+
+#p1 {
+  grid-column: 1 / span 2;
+}
+
+#p2 {
+  grid-column: 1 / span 3;
+  grid-row: 2 / span 1;
+}
+
+#picture {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+img {
+  height: 200px;
+}
+
+/* Information */
+
+.information {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 0px 40px 0px;
+}
+
+.information > p {
+  margin: 0;
+}
+
+.information > img {
+  border-radius: 50%;
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+/* Om Oss & Footer */
+
+footer {
+  background-color: white;
+}
+
+#om-oss {
+  text-align: center;
+  padding-top: 20px;
+  color: #955c41;
+}
+
+#om-oss > h3 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+
+#om-oss > p {
+  margin-top: 10px;
+  padding-bottom: 20px;
+  font-size: 20px;
+}
+
+#om-oss > a {
+  background-color: #955c41;
+  padding: 10px 60px 10px 60px;
+  border-radius: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+.bottom > p {
+  color: #8ca39c;
+  margin: 40px 0px 0px 25px;
+  padding-bottom: 20px;
+  font-size: 30px;
+  font-weight: bold;
+}

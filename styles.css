@@ -1,0 +1,400 @@
+body {
+  margin: 0;
+  font-family: "Jost", sans-serif;
+  background-color: rgb(150, 180, 166);
+  color: white;
+}
+
+#background-image {
+  background-image: url(./Bilder/Webbplatsen/campus2-stor.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  height: 100vh;
+}
+
+/* Header och navigation */
+
+main {
+  padding: 0;
+}
+
+#logo {
+  height: 100px;
+  position: absolute;
+  padding: 20px 20px 20px 20px;
+  transition: 0.5s;
+}
+
+#logo:hover {
+  transform: scale(1.05);
+}
+
+.main-menu {
+  display: flex;
+  justify-content: flex-end;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.37);
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  width: 600px;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+.nav-item {
+  flex-grow: 1;
+  position: relative;
+  padding-top: 10px;
+  font-weight: bold;
+  color: white;
+}
+
+.nav-item > a {
+  display: block;
+  padding: 20px;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  border-radius: 20px;
+}
+
+.nav-item:hover > a {
+  background-color: rgba(122, 122, 122, 0.3);
+  border-radius: 20px 20px 0px 0px;
+}
+
+#special:hover > a {
+  border-radius: 20px;
+}
+
+.sub-menu {
+  display: none;
+  position: absolute;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  left: 0;
+  z-index: 100;
+}
+
+.sub-menu > a {
+  text-decoration: none;
+  text-align: center;
+  padding: 20px;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+
+.sub-menu > a:hover {
+  text-decoration: underline;
+  background-color: rgba(150, 180, 166, 0.5);
+}
+
+.nav-item:hover .sub-menu {
+  display: flex;
+  background-color: rgba(122, 122, 122, 0.3);
+  border-radius: 0px 0px 20px 20px;
+  transition: background-color 0.5s;
+}
+
+.toggle-button {
+  position: absolute;
+  top: 3rem;
+  right: 3rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 19px;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+/* Banner */
+
+#background-image > .banner {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.banner > img {
+  height: 300px;
+}
+
+#arrow > img {
+  height: 25px;
+  position: absolute;
+  top: 95%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Welcome */
+
+.welcome-message {
+  text-align: center;
+  padding-top: 50px;
+}
+
+.welcome-message > p {
+  font-size: 30px;
+  padding-left: 15vw;
+  padding-right: 15vw;
+  line-height: 45px;
+  text-align: justify;
+}
+
+/* Grid */
+
+main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.grid-navigation {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  padding: 40px;
+  padding-bottom: 100px;
+  gap: 50px;
+  width: 70vw;
+}
+
+.grid-navigation > a {
+  color: white;
+  font-size: 45px;
+  font-weight: bold;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.37);
+}
+
+.grid-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  text-align: center;
+  height: 50vh;
+  width: 100%;
+  border-radius: 30px;
+  transition: 0.5s;
+}
+
+.grid-item:hover {
+  transform: scale(1.03);
+}
+
+.grid-navigation > .grid-item:nth-child(1) {
+  background-image: url(./Bilder/Webbplatsen/studier-liten1.jpg);
+  background-size: cover;
+}
+
+.grid-navigation > .grid-item:nth-child(2) {
+  background-image: url(./Bilder/Webbplatsen/swish-kvadrat.jpg);
+  background-size: cover;
+}
+
+.grid-navigation > .grid-item:nth-child(3) {
+  background-image: url(./Bilder/Webbplatsen/utegym.jpg);
+  background-size: cover;
+}
+
+.grid-navigation > .grid-item:nth-child(4) {
+  background-image: url(./Bilder/Webbplatsen/discgolf2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+/* Om Oss & Footer */
+
+footer {
+  background-color: white;
+}
+
+#om-oss {
+  text-align: center;
+  padding-top: 20px;
+  color: #955c41;
+}
+
+#om-oss > h3 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+
+#om-oss > p {
+  margin-top: 10px;
+  padding-bottom: 20px;
+  font-size: 20px;
+}
+
+#om-oss > a {
+  background-color: #955c41;
+  padding: 10px 60px 10px 60px;
+  border-radius: 30px;
+}
+
+#om-oss a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+.bottom > p {
+  color: #8ca39c;
+  margin: 40px 0px 0px 25px;
+  padding-bottom: 20px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+/* Media Query */
+
+@media (max-width: 600px) {
+
+  /* Header */
+
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  #background-image {
+    height: 80vh;
+  }
+
+  .main-menu {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .toggle-button {
+    display: flex;
+    cursor: pointer;
+    z-index: 200;
+  }
+
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    position: relative;
+    top: 7rem;
+    padding: 0;
+    border-radius: 20px;
+    z-index: 100;
+    background-color: #8ca39cb4;
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+
+  .nav-item {
+    padding: 0px;
+  }
+
+  .nav-item a {
+    padding: 13px;
+  }
+
+  .nav-item:hover > a {
+    background-color: rgba(255, 255, 255, 0)
+  }
+
+  .nav-item:hover .sub-menu {
+    display: none;
+  }
+
+  #logo {
+    display: none;
+  }
+
+  #arrow {
+    display: none;
+  }
+
+  #background-image > .banner {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .banner > img {
+    height: 250px;
+  }
+
+  .welcome-message {
+    /* display: none; */
+    padding-top: 20px;
+  }
+
+  .welcome-message > p {
+    font-size: 25px;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    line-height: 40px;
+  }
+
+  /* Grid */
+
+  .grid-navigation {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    padding: 40px;
+    padding-bottom: 100px;
+    gap: 50px;
+    width: 80vw;
+  }
+
+  .grid-navigation > a {
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.37);
+  }
+
+  .grid-item {
+    height: 60vw;
+    width: 100%;
+    border-radius: 30px;
+    transition: 0.5s;
+  }
+
+  #om-oss {
+    margin: 0px 5vw 0px 4vw;
+    padding-bottom: 40px;
+  }
+
+  .bottom > p {
+    display: none;
+  }
+}
